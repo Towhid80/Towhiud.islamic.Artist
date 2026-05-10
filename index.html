@@ -1,0 +1,314 @@
+!DOCTYPE html>
+<html lang<="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H.M. Towhidul Islam | Official Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;600;700&display=swap');
+        body { font-family: 'Hind Siliguri', sans-serif; scroll-behavior: smooth; }
+        .hero-bg { background: linear-gradient(to right, rgba(2, 6, 23, 0.95), rgba(2, 6, 23, 0.8)), url('https://images.unsplash.com/photo-1516280440614-37939bbacd81?q=80&w=2070&auto=format&fit=crop'); background-size: cover; background-position: center; }
+        .text-gold { color: #C5A059; }
+        .bg-gold { background-color: #C5A059; }
+        .border-gold { border-color: #C5A059; }
+    </style>
+</head>
+<body class="bg-white">
+
+    <nav class="bg-[#020617] text-white py-4 px-6 sticky top-0 z-50 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-gold rounded-full flex items-center justify-center font-bold text-black text-xl">T</div>
+                <span class="font-bold text-lg tracking-tight">H.M. Towhidul Islam</span>
+            </div>
+            <ul class="hidden lg:flex space-x-6 text-sm font-medium uppercase tracking-wider">
+                <li><a href="#" class="text-gold">Home</a></li>
+                <li><a href="#about" class="hover:text-gold transition">About</a></li>
+                <li><a href="#works" class="hover:text-gold transition">Works</a></li>
+                <li><a href="#contact" class="hover:text-gold transition">Contact</a></li>
+            </ul>
+            <div class="flex items-center gap-2">
+                <button onclick="translatePage('bn')" class="bg-blue-600 px-4 py-1 rounded text-xs hover:bg-blue-700 transition">বাংলা</button>
+                <button onclick="translatePage('en')" class="border border-slate-600 px-4 py-1 rounded text-xs hover:bg-slate-700 transition">English</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-bg text-white py-20 px-6 min-h-[85vh] flex items-center">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-3/5">
+                <p class="text-gold mb-2 font-semibold tracking-wide" id="hero-welcome">Welcome To My Official Website</p>
+                <h1 class="text-5xl md:text-7xl font-bold mb-4">H.M.Towhidul Islam</h1>
+                <h2 class="text-2xl text-gold italic mb-6" id="hero-title">Islamic Artist</h2>
+                <p class="text-slate-300 text-lg mb-8 max-w-lg leading-relaxed" id="hero-desc">I try to spread the message of Islam through my voice and creativity. My goal is to touch hearts and inspire imaan.</p>
+                
+                <div class="flex flex-wrap gap-4">
+                    <a href="#works" class="bg-blue-700 hover:bg-blue-800 px-8 py-4 rounded-md flex items-center gap-2 font-bold transition transform hover:-translate-y-1 shadow-lg">
+                        <i class="fas fa-play"></i> <span id="btn-watch">Watch My Work</span>
+                    </a>
+                    <a href="e:\html\profile pdf.pdf" download class="border-2 border-white hover:bg-white hover:text-black px-8 py-4 rounded-md flex items-center gap-2 font-bold transition transform hover:-translate-y-1 shadow-lg">
+                        <i class="fas fa-download"></i> <span id="btn-download">Download Profile</span>
+                    </a>
+                </div>
+
+                <div class="mt-12 flex items-center gap-6">
+                    <span class="text-slate-400 font-medium" id="follow-text">Follow Me:</span>
+                    <div class="flex gap-5 text-2xl">
+                        <a href="https://www.facebook.com/share/1JtAAHHVXk/" target="_blank" class="hover:text-blue-500 transition"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/@Islamicshor880" target="_blank" class="hover:text-red-600 transition"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.tiktok.com/@towhidul8800" target="_blank" class="hover:text-gray-400 transition"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://wa.me/message/U3YCOQB5LVXCD1" target="_blank" class="hover:text-pink-500 transition"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://t.me/islamicShor880" target="_blank" class="hover:text-blue-400 transition"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-2/5 flex justify-center">
+                <div class="relative">
+                    <div class="w-72 h-96 md:w-80 md:h-[480px] border-[12px] border-slate-900/50 rounded-t-full overflow-hidden shadow-2xl backdrop-blur-sm">
+                        <img src="e:\html\pictuer.jpeg" class="w-full h-full object-cover" alt="Artist profile">
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 w-24 h-24 bg-gold rounded-full flex items-center justify-center border-8 border-[#020617] shadow-xl">
+                        <i class="fas fa-microphone-alt text-3xl text-black"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="py-24 px-6 bg-white">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row gap-16 items-center">
+            <div class="md:w-1/2">
+                <div class="relative p-2 border-2 border-gold rounded-2xl">
+                    <img src="e:\html\to0w.png" class="rounded-2xl shadow-xl w-72 h-auto object-cover" alt="About Me">
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <p class="text-gold font-bold uppercase tracking-[0.2em] text-sm mb-2" id="about-label">Who Am I</p>
+                <h2 class="text-5xl font-bold mb-6 text-slate-900" id="about-heading">About Me</h2>
+                <p class="text-slate-600 text-lg leading-relaxed mb-8" id="about-text">I am H.M. Towhidul Islam, an Islamic Artist. I perform Naat, Nasheed, Hamd, and other Islamic content. I believe that Islamic art has the power to change hearts and society.</p>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-6 border-t border-slate-100 pt-8">
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 bg-blue-50 rounded-full flex items-center justify-center text-blue-600"><i class="fas fa-user"></i></div>
+                        <div><p class="text-xs text-slate-400 uppercase tracking-tighter" id="label-name">Name</p><p class="font-bold text-slate-800 text-sm md:text-base">H.M. Towhidul Islam</p></div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 bg-blue-50 rounded-full flex items-center justify-center text-blue-600"><i class="fas fa-flag"></i></div>
+                        <div><p class="text-xs text-slate-400 uppercase tracking-tighter" id="label-from">From</p><p class="font-bold text-slate-800 text-sm md:text-base">Bangladesh</p></div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 bg-blue-50 rounded-full flex items-center justify-center text-blue-600"><i class="fas fa-briefcase"></i></div>
+                        <div><p class="text-xs text-slate-400 uppercase tracking-tighter" id="label-prof">Profession</p><p class="font-bold text-slate-800 text-sm md:text-base">Islamic Artist</p></div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 bg-blue-50 rounded-full flex items-center justify-center text-blue-600"><i class="fas fa-award"></i></div>
+                        <div><p class="text-xs text-slate-400 uppercase tracking-tighter" id="label-exp">Experience</p><p class="font-bold text-slate-800 text-sm md:text-base">5+ Years</p></div>
+                    </div>
+                </div>
+                <button class="mt-10 bg-gold text-black px-10 py-3 rounded-md font-bold shadow-lg hover:bg-yellow-600 transition flex items-center gap-2">
+                    Read More <i class="fas fa-arrow-right text-xs"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="works" class="bg-[#020617] py-24 px-6 text-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex justify-between items-end mb-16">
+                <div>
+                    <p class="text-gold font-bold tracking-widest mb-2">MY WORKS</p>
+                    <h2 class="text-5xl font-bold" id="works-heading">My Works</h2>
+                </div>
+                <button class="border border-slate-700 px-8 py-2 rounded-full hover:bg-gold hover:border-gold hover:text-black transition duration-300">View All Works</button>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-slate-900/40 p-4 rounded-3xl border border-slate-800 group hover:border-gold transition-all duration-300">
+                    <div class="relative overflow-hidden rounded-2xl mb-5 aspect-video">
+                        <img src=":\html\to00w.jpeg" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                        <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            <a href="https://youtu.be/suAgEcAYq4I?si=OKby0YqdN4DOnrjE" target="_blank" class="text-6xl text-gold hover:scale-110 transition">
+                                <i class="fas fa-play-circle"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-xl mb-1">Ya Nabi Salam Alaika</h3>
+                    <p class="text-slate-500 text-sm">Naat-E-Rasul</p>
+                </div>
+
+                <div class="bg-slate-900/40 p-4 rounded-3xl border border-slate-800 group hover:border-gold transition-all duration-300">
+                    <div class="relative overflow-hidden rounded-2xl mb-5 aspect-video">
+                        <img src="e:\html\to00w.jpeg" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                        <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            <a href="https://youtu.be/suAgEcAYq4I?si=OKby0YqdN4DOnrjE" target="_blank" class="text-6xl text-gold hover:scale-110 transition"><i class="fas fa-play-circle"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-xl mb-1">Tumi Jaler Alo</h3>
+                    <p class="text-slate-500 text-sm">Islamic Song</p>
+                </div>
+
+                <div class="bg-slate-900/40 p-4 rounded-3xl border border-slate-800 group hover:border-gold transition-all duration-300">
+                    <div class="relative overflow-hidden rounded-2xl mb-5 aspect-video">
+                        <img src="e:\html\iimm.jpeg" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                        <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            <a href="https://youtu.be/suAgEcAYq4I?si=OKby0YqdN4DOnrjE" target="_blank" class="text-6xl text-gold hover:scale-110 transition"><i class="fas fa-play-circle"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-xl mb-1">Quraner Bani</h3>
+                    <p class="text-slate-500 text-sm">Nasheed</p>
+                </div>
+
+                <div class="bg-slate-900/40 p-4 rounded-3xl border border-slate-800 group hover:border-gold transition-all duration-300">
+                    <div class="relative overflow-hidden rounded-2xl mb-5 aspect-video">
+                        <img src="e:\html\to0w.png" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                        <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            <a href="https://youtu.be/suAgEcAYq4I?si=OKby0YqdN4DOnrjE" target="_blank" class="text-6xl text-gold hover:scale-110 transition"><i class="fas fa-play-circle"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-xl mb-1">Islamer Pothe Cholo</h3>
+                    <p class="text-slate-500 text-sm">Islamic Song</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-24 pt-16 border-t border-slate-800 text-center">
+                <div><h3 class="text-5xl font-bold text-gold mb-2">150+</h3><p class="text-slate-400 uppercase text-xs tracking-widest">Islamic Songs</p></div>
+                <div><h3 class="text-5xl font-bold text-gold mb-2">1M+</h3><p class="text-slate-400 uppercase text-xs tracking-widest">Followers</p></div>
+                <div><h3 class="text-5xl font-bold text-gold mb-2">50M+</h3><p class="text-slate-400 uppercase text-xs tracking-widest">Total Views</p></div>
+                <div><h3 class="text-5xl font-bold text-gold mb-2">5+</h3><p class="text-slate-400 uppercase text-xs tracking-widest">Years Experience</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 px-6 bg-[#f8fafc] text-center">
+        <p class="text-gold font-bold tracking-[0.4em] text-sm mb-4 uppercase">Follow Me On</p>
+        <h2 class="text-5xl font-bold mb-16 text-slate-900" id="connect-heading">Stay Connected</h2>
+        
+        <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+            <a href="https://www.facebook.com/share/1JtAAHHVXk/" target="_blank" class="flex items-center justify-between bg-blue-600 text-white p-5 rounded-2xl hover:-translate-y-2 transition-all duration-300 shadow-xl">
+                <div class="flex items-center gap-4"><i class="fab fa-facebook text-3xl"></i> <span class="font-bold">Facebook</span></div>
+                <i class="fas fa-external-link-alt text-xs opacity-50"></i>
+            </a>
+            <a href="https://www.youtube.com/@Islamicshor880" target="_blank" class="flex items-center justify-between bg-red-600 text-white p-5 rounded-2xl hover:-translate-y-2 transition-all duration-300 shadow-xl">
+                <div class="flex items-center gap-4"><i class="fab fa-youtube text-3xl"></i> <span class="font-bold">YouTube</span></div>
+                <i class="fas fa-external-link-alt text-xs opacity-50"></i>
+            </a>
+            <a href="https://www.tiktok.com/@towhidul8800" target="_blank" class="flex items-center justify-between bg-[#010101] text-white p-5 rounded-2xl hover:-translate-y-2 transition-all duration-300 shadow-xl">
+                <div class="flex items-center gap-4"><i class="fab fa-tiktok text-3xl"></i> <span class="font-bold">TikTok</span></div>
+                <i class="fas fa-external-link-alt text-xs opacity-50"></i>
+            </a>
+            <a href="https://wa.me/message/U3YCOQB5LVXCD1" target="_blank" class="flex items-center justify-between bg-gradient-to-tr from-yellow-500 via-pink-600 to-purple-600 text-white p-5 rounded-2xl hover:-translate-y-2 transition-all duration-300 shadow-xl">
+                <div class="flex items-center gap-4"><i class="fab fa-whatsapp text-3xl"></i> <span class="font-bold">WhatsApp</span></div>
+                <i class="fas fa-external-link-alt text-xs opacity-50"></i>
+            </a>
+            <a href="https://t.me/islamicShor880" target="_blank" class="flex items-center justify-between bg-[#229ED9] text-white p-5 rounded-2xl hover:-translate-y-2 transition-all duration-300 shadow-xl">
+                <div class="flex items-center gap-4"><i class="fab fa-telegram text-3xl"></i> <span class="font-bold">Telegram</span></div>
+                <i class="fas fa-external-link-alt text-xs opacity-50"></i>
+            </a>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-[#020617] text-white py-24 px-6 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20">
+            <div>
+                <h2 class="text-5xl font-bold mb-8" id="footer-heading">Get In Touch</h2>
+                <p class="text-slate-400 text-lg mb-12 max-w-md" id="footer-desc">Feel free to contact me for any kind of collaboration or invitation.</p>
+                <div class="space-y-8">
+                    <div class="flex items-center gap-6">
+                        <div class="w-14 h-14 bg-slate-900 rounded-full flex items-center justify-center text-gold border border-slate-700">
+                            <i class="fas fa-envelope text-xl"></i>
+                        </div>
+                        <div><p class="text-xs text-slate-500 uppercase tracking-widest">Email</p><p class="text-lg">imd62888@gmail.com</p></div>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <div class="w-14 h-14 bg-slate-900 rounded-full flex items-center justify-center text-gold border border-slate-700">
+                            <i class="fas fa-phone-alt text-xl"></i>
+                        </div>
+                        <div><p class="text-xs text-slate-500 uppercase tracking-widest">Phone</p><p class="text-lg">+880 1889626880</p></div>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <div class="w-14 h-14 bg-slate-900 rounded-full flex items-center justify-center text-gold border border-slate-700">
+                            <i class="fas fa-map-marker-alt text-xl"></i>
+                        </div>
+                        <div><p class="text-xs text-slate-500 uppercase tracking-widest">Location</p><p class="text-lg">Anowara,Chattogrom,Bangladesh</p></div>
+                    </div>
+                </div>
+            </div>
+            
+            <form class="bg-slate-900/30 p-10 rounded-3xl border border-slate-800">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <input type="text" placeholder="Your Name" class="bg-slate-900 border border-slate-700 p-4 rounded-xl w-full focus:border-gold outline-none transition">
+                    <input type="email" placeholder="Your Email" class="bg-slate-900 border border-slate-700 p-4 rounded-xl w-full focus:border-gold outline-none transition">
+                </div>
+                <input type="text" placeholder="Subject" class="bg-slate-900 border border-slate-700 p-4 rounded-xl w-full mb-6 focus:border-gold outline-none transition">
+                <textarea rows="5" placeholder="Message" class="bg-slate-900 border border-slate-700 p-4 rounded-xl w-full mb-8 focus:border-gold outline-none transition"></textarea>
+                <button class="bg-blue-600 hover:bg-blue-700 text-white w-full py-4 rounded-xl font-bold text-lg shadow-2xl transition duration-300 uppercase tracking-widest">
+                    Send Message
+                </button>
+            </form>
+        </div>
+        <div class="mt-24 pt-10 border-t border-slate-800/50 text-center text-slate-500 text-sm">
+            © 2026 H.M. Towhidul Islam | All Rights Reserved.
+        </div>
+    </footer>
+
+    <script>
+        function translatePage(lang) {
+            const data = {
+                bn: {
+                    welcome: "আমার অফিসিয়াল ওয়েবসাইটে স্বাগতম",
+                    title: "ইসলামী শিল্পী",
+                    desc: "আমি আমার কণ্ঠ এবং সৃজনশীলতার মাধ্যমে ইসলামের বাণী ছড়িয়ে দেওয়ার চেষ্টা করি।",
+                    watch: "ভিডিও দেখুন",
+                    download: "প্রোফাইল ডাউনলোড",
+                    follow: "আমাকে ফলো করুন:",
+                    aboutL: "আমি কে",
+                    aboutH: "আমার সম্পর্কে",
+                    aboutT: "আমি এইচ.এম. তৌহিদুল ইসলাম, একজন ইসলামী শিল্পী। আমি নাত, নাশিদ, হামদ এবং অন্যান্য ইসলামী বিষয়বস্তু পরিবেশন করি।",
+                    worksH: "আমার কাজ",
+                    connectH: "যুক্ত থাকুন",
+                    footerH: "যোগাযোগ করুন",
+                    footerD: "যেকোনো ধরণের সহযোগিতা বা আমন্ত্রণের জন্য নির্দ্বিধায় আমার সাথে যোগাযোগ করুন।",
+                    name: "নাম", from: "দেশ", prof: "পেশা", exp: "অভিজ্ঞতা"
+                },
+                en: {
+                    welcome: "Welcome To My Official Website",
+                    title: "Islamic Artist",
+                    desc: "I try to spread the message of Islam through my voice and creativity. My goal is to touch hearts and inspire imaan.",
+                    watch: "Watch My Work",
+                    download: "Download Profile",
+                    follow: "Follow Me:",
+                    aboutL: "Who Am I",
+                    aboutH: "About Me",
+                    aboutT: "I am H.M. Towhidul Islam, an Islamic Artist. I perform Naat, Nasheed, Hamd, and other Islamic content. I believe that Islamic art has the power to change hearts and society.",
+                    worksH: "My Works",
+                    connectH: "Stay Connected",
+                    footerH: "Get In Touch",
+                    footerD: "Feel free to contact me for any kind of collaboration or invitation.",
+                    name: "Name", from: "From", prof: "Profession", exp: "Experience"
+                }
+            };
+
+            const l = data[lang];
+            document.getElementById('hero-welcome').innerText = l.welcome;
+            document.getElementById('hero-title').innerText = l.title;
+            document.getElementById('hero-desc').innerText = l.desc;
+            document.getElementById('btn-watch').innerText = l.watch;
+            document.getElementById('btn-download').innerText = l.download;
+            document.getElementById('follow-text').innerText = l.follow;
+            document.getElementById('about-label').innerText = l.aboutL;
+            document.getElementById('about-heading').innerText = l.aboutH;
+            document.getElementById('about-text').innerText = l.aboutT;
+            document.getElementById('works-heading').innerText = l.worksH;
+            document.getElementById('connect-heading').innerText = l.connectH;
+            document.getElementById('footer-heading').innerText = l.footerH;
+            document.getElementById('footer-desc').innerText = l.footerD;
+            document.getElementById('label-name').innerText = l.name;
+            document.getElementById('label-from').innerText = l.from;
+            document.getElementById('label-prof').innerText = l.prof;
+            document.getElementById('label-exp').innerText = l.exp;
+        }
+    </script>
+</body>
+</html>
