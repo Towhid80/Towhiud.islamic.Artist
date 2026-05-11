@@ -1,0 +1,339 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>H.M. Towhidul Islam | Islamic Artist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      scroll-behavior:smooth;
+    }
+
+    body{
+      font-family:'Poppins', sans-serif;
+      background:#07111f;
+      color:white;
+      overflow-x:hidden;
+    }
+
+    .bangla{
+      font-family:'Hind Siliguri', sans-serif;
+    }
+
+    header{
+      width:100%;
+      padding:20px 8%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      background:#0b1728;
+      position:sticky;
+      top:0;
+      z-index:1000;
+      box-shadow:0 2px 10px rgba(0,0,0,0.4);
+    }
+
+    .logo{
+      font-size:28px;
+      font-weight:700;
+      color:#4da3ff;
+    }
+
+    nav a{
+      text-decoration:none;
+      color:white;
+      margin-left:25px;
+      transition:0.3s;
+      font-weight:500;
+    }
+
+    nav a:hover{
+      color:#4da3ff;
+    }
+
+    .hero{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:80px 8%;
+      gap:40px;
+      flex-wrap:wrap;
+    }
+
+    .hero-text{
+      flex:1;
+      min-width:300px;
+    }
+
+    .hero-text h1{
+      font-size:58px;
+      line-height:1.2;
+      margin-bottom:15px;
+    }
+
+    .hero-text h1 span{
+      color:#4da3ff;
+    }
+
+    .hero-text p{
+      font-size:18px;
+      color:#c7d4e7;
+      line-height:1.8;
+      margin-bottom:25px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:14px 30px;
+      background:#4da3ff;
+      color:white;
+      text-decoration:none;
+      border-radius:10px;
+      transition:0.3s;
+      font-weight:600;
+    }
+
+    .btn:hover{
+      background:#2388f5;
+      transform:translateY(-3px);
+    }
+
+    .hero-image{
+      flex:1;
+      text-align:center;
+      min-width:300px;
+    }
+
+    .hero-image img{
+      width:350px;
+      height:350px;
+      border-radius:50%;
+      object-fit:cover;
+      border:6px solid #4da3ff;
+      box-shadow:0 0 30px rgba(77,163,255,0.5);
+    }
+
+    section{
+      padding:90px 8%;
+    }
+
+    .section-title{
+      text-align:center;
+      font-size:40px;
+      margin-bottom:50px;
+      color:#4da3ff;
+    }
+
+    .about{
+      background:#0b1728;
+      border-radius:20px;
+      padding:40px;
+      line-height:1.9;
+      color:#d7e4f5;
+      font-size:18px;
+    }
+
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+    }
+
+    .gallery-item{
+      background:#0b1728;
+      border-radius:20px;
+      overflow:hidden;
+      transition:0.3s;
+    }
+
+    .gallery-item:hover{
+      transform:translateY(-8px);
+    }
+
+    .gallery-item img{
+      width:100%;
+      height:260px;
+      object-fit:cover;
+    }
+
+    .gallery-item h3{
+      padding:18px;
+      text-align:center;
+    }
+
+    .social-links{
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:20px;
+      margin-top:30px;
+    }
+
+    .social-links a{
+      text-decoration:none;
+      color:white;
+      background:#10233b;
+      padding:14px 24px;
+      border-radius:12px;
+      transition:0.3s;
+    }
+
+    .social-links a:hover{
+      background:#4da3ff;
+    }
+
+    .contact-box{
+      background:#0b1728;
+      padding:40px;
+      border-radius:20px;
+      text-align:center;
+    }
+
+    .contact-box p{
+      margin:15px 0;
+      color:#d6e4f6;
+      font-size:18px;
+    }
+
+    footer{
+      text-align:center;
+      padding:25px;
+      background:#06101d;
+      color:#b7c7d9;
+    }
+
+    @media(max-width:768px){
+      .hero{
+        flex-direction:column-reverse;
+        text-align:center;
+      }
+
+      .hero-text h1{
+        font-size:42px;
+      }
+
+      nav{
+        display:none;
+      }
+
+      .hero-image img{
+        width:280px;
+        height:280px;
+      }
+    }
+  </style></head>
+<body>  <header>
+    <div class="logo">H.M.Towhidul Islam</div><nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+  </header>  <section class="hero" id="home">
+    <div class="hero-text">
+      <h1>Hello, I'm <span>H.M. Towhidul Islam</span></h1><p class="bangla">
+    I am Islamic Artist and Content Creator। Love to create Islamic music, ghazals and creative video content.
+  </p>
+
+  <a href="#contact" class="btn">Contact Me</a>
+</div>
+
+<div class="hero-image">
+  <img src="e:\html\to0w.png" alt="Artist Photo">
+</div>
+
+  </section>  <section id="about">
+    <h2 class="section-title">About Me</h2><div class="about bangla">
+  <p>
+    আসসালামু আলাইকুম। আমি H.M. Towhidul Islam। আমি একজন ইসলামিক শিল্পী এবং ডিজিটাল কনটেন্ট ক্রিয়েটর। আমি ইসলামিক গজল, নাশিদ এবং অনুপ্রেরণামূলক ভিডিও তৈরি করি।
+  </p>
+
+  <br>
+
+  <p>
+    My mission is to spread peace, love and Islamic values through creative content and artistic presentation.
+  </p>
+</div>
+
+  </section>  <section id="gallery">
+    <h2 class="section-title">My Gallery</h2><div class="gallery">
+  <div class="gallery-item">
+    <img src="g:\New folder\lv_0_20250828114145.mp4" alt="Gallery">
+    <h3>Islamic Video</h3>
+  </div>
+
+  <div class="gallery-item">
+    <img src="e:\html\to00w.jpeg" alt="Gallery">
+    <h3>Nasheed Performance</h3>
+  </div>
+
+  <div class="gallery-item">
+    <img src="gallery3.jpg" alt="Gallery">
+    <h3>Creative Content</h3>
+  </div>
+<div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 mt-20 text-center border-t border-gray-800 pt-10">
+            <div><h3 class="text-3xl font-bold text-gold">150+</h3><p class="text-gray-400">Islamic Songs</p></div>
+            <div><h3 class="text-3xl font-bold text-gold">1M+</h3><p class="text-gray-400">Followers</p></div>
+            <div><h3 class="text-3xl font-bold text-gold">50M+</h3><p class="text-gray-400">Total Views</p></div>
+            <div><h3 class="text-3xl font-bold text-gold">5+</h3><p class="text-gray-400">Years Experience</p></div>
+        </div>
+
+</div>
+
+  </section>  <section id="contact">
+    <h2 class="section-title">Contact Me</h2><div class="contact-box bangla">
+  <p>আপনি আমার সাথে সোশ্যাল মিডিয়ায় যোগাযোগ করতে পারেন।</p>
+
+  <div class="social-links">
+    <a href="https://www.facebook.com/share/1JtAAHHVXk/" target="_blank">Facebook</a>
+    <a href="https://www.youtube.com/@Islamicshor880" target="_blank">YouTube</a>
+    <a href="https://www.tiktok.com/@towhidul8800" target="_blank">TikTok</a>
+    <a href="https://t.me/islamicShor880" target="_blank">Telegram</a>
+    <a href="https://wa.me/message/U3YCOQB5LVXCD1" target="_blank">WhatsApp</a>
+  </div>
+</div>
+
+    <footer class="bg-[#020617] text-white py-20 px-6 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div>
+                <h2 class="text-3xl font-bold mb-4">Get In Touch</h2>
+                <p class="text-gray-400 mb-8">Feel free to contact me for any kind of collaboration or invitation.</p>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4">
+                        <i class="fas fa-envelope text-gold"></i>
+                        <span>imd62888@gmail.com</span>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <i class="fas fa-phone text-gold"></i>
+                        <span>+880 188-9626880</span>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <i class="fas fa-map-marker-alt text-gold"></i>
+                        <span>Anowara,Chattogrom,Bangladesh</span>
+                    </div>
+                </div>
+            </div>
+            <form class="space-y-4">
+                <div class="grid grid-cols-2 gap-4">
+                    <input type="text" placeholder="Your Name" class="bg-gray-900 border border-gray-700 p-3 rounded w-full outline-none focus:border-gold">
+                    <input type="email" placeholder="Your Email" class="bg-gray-900 border border-gray-700 p-3 rounded w-full outline-none focus:border-gold">
+                </div>
+                <input type="text" placeholder="Subject" class="bg-gray-900 border border-gray-700 p-3 rounded w-full outline-none focus:border-gold">
+                <textarea placeholder="Message" rows="4" class="bg-gray-900 border border-gray-700 p-3 rounded w-full outline-none focus:border-gold"></textarea>
+                <button class="bg-blue-600 w-full py-3 rounded font-bold hover:bg-blue-700 transition">Send Message</button>
+            </form>
+        </div>
+        <div class="text-center mt-20 text-gray-500 text-sm">    
+        </div>
+    </footer>
+</div>
+  </section>  <footer>
+    © 2026 H.M. Towhidul Islam | Islamic Artist Portfolio
+  </footer></body>
+</html>
