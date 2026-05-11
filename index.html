@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang<="bn">
 <head>
     <meta charset="UTF-8">
@@ -20,14 +20,16 @@
     <nav class="bg-[#020617] text-white py-4 px-6 sticky top-0 z-50 border-b border-slate-800">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
             <div class="flex items-center gap-2">
-                <div class="w-10 h-10 bg-gold rounded-full flex items-center justify-center font-bold text-black text-xl">T</div>
+                <div class="w-10 h-10 bg-gold rounded-full flex items-center justify-center font-bold text-black text-xl"> <img src="e:\html\imim.jpeg" class="w-full h-full object-cover" alt=b> </div>
                 <span class="font-bold text-lg tracking-tight">H.M. Towhidul Islam</span>
+                <span class="font-bold text-lg tracking-tight"> Islamic Artist</span>
             </div>
             <ul class="hidden lg:flex space-x-6 text-sm font-medium uppercase tracking-wider">
                 <li><a href="#" class="text-gold">Home</a></li>
                 <li><a href="#about" class="hover:text-gold transition">About</a></li>
                 <li><a href="#works" class="hover:text-gold transition">Works</a></li>
                 <li><a href="#contact" class="hover:text-gold transition">Contact</a></li>
+                <li><a href="#My information and certificate" class="hover:text-gold transition">My information and certificate</a></li>
             </ul>
             <div class="flex items-center gap-2">
                 <button onclick="translatePage('bn')" class="bg-blue-600 px-4 py-1 rounded text-xs hover:bg-blue-700 transition">বাংলা</button>
@@ -81,7 +83,7 @@
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row gap-16 items-center">
             <div class="md:w-1/2">
                 <div class="relative p-2 border-2 border-gold rounded-2xl">
-                    <img src="e:\html\to0w.png" class="rounded-2xl shadow-xl w-72 h-auto object-cover" alt="About Me">
+                    <img src="e:\html\to0w.png" class="rounded-2xl shadow-xl w-auto h-auto object-cover" alt="About Me">
                 </div>
             </div>
             <div class="md:w-1/2">
@@ -127,7 +129,7 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div class="bg-slate-900/40 p-4 rounded-3xl border border-slate-800 group hover:border-gold transition-all duration-300">
                     <div class="relative overflow-hidden rounded-2xl mb-5 aspect-video">
-                        <img src=":\html\to00w.jpeg" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                        <img src="e:\html\to00w.jpeg" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
                         <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                             <a href="https://youtu.be/suAgEcAYq4I?si=OKby0YqdN4DOnrjE" target="_blank" class="text-6xl text-gold hover:scale-110 transition">
                                 <i class="fas fa-play-circle"></i>
@@ -151,7 +153,7 @@
 
                 <div class="bg-slate-900/40 p-4 rounded-3xl border border-slate-800 group hover:border-gold transition-all duration-300">
                     <div class="relative overflow-hidden rounded-2xl mb-5 aspect-video">
-                        <img src="e:\html\iimm.jpeg" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                        <img src="e:\html\to0w.png" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
                         <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                             <a href="https://youtu.be/suAgEcAYq4I?si=OKby0YqdN4DOnrjE" target="_blank" class="text-6xl text-gold hover:scale-110 transition"><i class="fas fa-play-circle"></i></a>
                         </div>
@@ -311,4 +313,100 @@
         }
     </script>
 </body>
+<section id="credentials" class="py-24 px-6 bg-slate-50">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-slate-900 mb-4">My information and certificate</h2>
+            <div class="w-24 h-1 bg-gold mx-auto"></div>
+        </div>
+
+        <div class="flex flex-col lg:flex-row gap-8">
+            <div class="lg:w-1/3 flex flex-col gap-2">
+                <button onclick="showTab('tab1')" class="tab-btn active bg-white p-4 text-left rounded-lg shadow-sm border-l-4 border-gold font-bold hover:bg-gold hover:text-white transition">১. আমার সম্পর্কে কিছু কথা</button>
+                <button onclick="showTab('tab2')" class="tab-btn bg-white p-4 text-left rounded-lg shadow-sm border-l-4 border-slate-300 font-bold hover:bg-gold hover:text-white transition">২. হিফয প্রশিক্ষণ সার্টিফিকেট (PDF)</button>
+                <button onclick="showTab('tab3')" class="tab-btn bg-white p-4 text-left rounded-lg shadow-sm border-l-4 border-slate-300 font-bold hover:bg-gold hover:text-white transition">৩. জন্ম স্বরনিকা (PDF)</button>
+                <button onclick="showTab('tab4')" class="tab-btn bg-white p-4 text-left rounded-lg shadow-sm border-l-4 border-slate-300 font-bold hover:bg-gold hover:text-white transition">৪. SSC সার্টিফিকেট (PDF)</button>
+                <button onclick="showTab('tab5')" class="tab-btn bg-white p-4 text-left rounded-lg shadow-sm border-l-4 border-slate-300 font-bold hover:bg-gold hover:text-white transition">৫. জীবনবৃত্তান্ত (PDF)</button>
+                <button onclick="showTab('tab6')" class="tab-btn bg-white p-4 text-left rounded-lg shadow-sm border-l-4 border-slate-300 font-bold hover:bg-gold hover:text-white transition">৬. আমার শিক্ষাপ্রতিষ্ঠান</button>
+                <button onclick="showTab('tab7')" class="tab-btn bg-white p-4 text-left rounded-lg shadow-sm border-l-4 border-slate-300 font-bold hover:bg-gold hover:text-white transition">৭. বর্তমান পেশা ও কাজ</button>
+            </div>
+
+            <div class="lg:w-2/3 bg-white p-6 rounded-2xl shadow-xl min-h-[500px] border border-slate-100">
+                
+                <div id="tab1" class="tab-content">
+                    <h3 class="text-2xl font-bold text-blue-700 mb-4">আমার সম্পর্কে</h3>
+                    <p class="text-slate-600 leading-relaxed text-lg">
+                        আসসালামু আলাইকুম, আমি এইচ.এম. তৌহিদুল ইসলাম। আমি একজন ইসলামী শিল্পী এবং পবিত্র কোরআনের হাফেজ। আমার মূল লক্ষ্য হলো ইসলামী সংগীত এবং ক্বেরাতের মাধ্যমে মানুষের হৃদয়ে দ্বীনের দাওয়াত পৌঁছে দেওয়া। 
+                        <br><br>
+                        আমি মনে করি সুস্থ সংস্কৃতি চর্চা ইমানের একটি অংশ। আমি দেশ ও দশের কল্যাণে কাজ করতে চাই।
+                    </p>
+                </div>
+
+                <div id="tab2" class="tab-content hidden h-full">
+                    <p class="text-sm text-red-500 mb-2 font-bold"><i class="fas fa-lock"></i> View Only - ডাউনলোড করা যাবে না</p>
+                    <iframe src="e:\html\হিফয সার্টিফিকেট .pdf#toolbar=0" class="w-full h-[500px] rounded border" oncontextmenu="return false;"></iframe>
+                </div>
+
+                <div id="tab3" class="tab-content hidden h-full">
+                    <iframe src="e:\html\জন্ম স্বরনিকা.pdf#toolbar=0" class="w-full h-[500px] rounded border" oncontextmenu="return false;"></iframe>
+                </div>
+
+                <div id="tab4" class="tab-content hidden h-full">
+                    <iframe src="e:\html\অষ্টম .pdf#toolbar=0" class="w-full h-[500px] rounded border" oncontextmenu="return false;"></iframe>
+                </div>
+
+                <div id="tab5" class="tab-content hidden h-full">
+                    <iframe src="e:\html\জীবন বিত্তান্ত.pdf#toolbar=0" class="w-full h-[500px] rounded border" oncontextmenu="return false;"></iframe>
+                </div>
+
+                <div id="tab6" class="tab-content hidden text-center">
+                    <h3 class="text-2xl font-bold text-blue-700 mb-4">আমার শিক্ষাপ্রতিষ্ঠান</h3>
+                    <img src="e:\html\madrasha.jpg" class="w-full max-h-64 object-cover rounded-xl mb-4 shadow-md" alt="মাদ্রাসার ছবি">
+                    <h4 class="text-xl font-bold text-slate-800">পশ্চিমচাল ইসলামীয়া কামিল ( এম.এ) মাদ্রাসা</h4>
+                    <p class="text-slate-500 italic">ঠিকানা: গ্রাম:পশ্চিমচাল বখতিয়ার পাড়া, ডাকঘর: মিন্নাত আলীর হাট, উপজেলা: আনোয়ারা, জেলা: চট্টগ্রাম।</p>
+                </div>
+
+                <div id="tab7" class="tab-content hidden">
+                    <h3 class="text-2xl font-bold text-blue-700 mb-4">বর্তমান পেশা ও কাজ ni</h3>
+                    <div class="flex items-center gap-4 bg-blue-50 p-6 rounded-xl border-l-8 border-blue-600">
+                        <i class="fas fa-briefcase text-4xl text-blue-600"></i>
+                        <div>
+                            <h4 class="text-xl font-bold">আপনার পদের নাম (যেমন: খতিব/শিল্পী)</h4>
+                            <p class="text-slate-600">প্রতিষ্ঠানের নাম ও কাজের সংক্ষিপ্ত বিবরণ এখানে দিন।</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    function showTab(tabId) {
+        // Hide all tabs
+        document.querySelectorAll('.tab-content').forEach(tab => {
+            tab.classList.add('hidden');
+        });
+        // Show selected tab
+        document.getElementById(tabId).classList.remove('hidden');
+        
+        // Reset button colors
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.classList.remove('bg-gold', 'text-white', 'active');
+            btn.classList.add('bg-white', 'text-black');
+        });
+        // Highlight active button
+        const activeBtn = event.currentTarget;
+        activeBtn.classList.remove('bg-white', 'text-black');
+        activeBtn.classList.add('bg-gold', 'text-white', 'active');
+    }
+</script>
+
+<style>
+    /* Disable simple right click on content area to deter saving images/PDFs */
+    .tab-content { user-select: none; -webkit-user-drag: none; }
+    iframe { pointer-events: auto; }
+
+
 </html>
